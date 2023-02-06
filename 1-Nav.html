@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=V, initial-scale=1.0">
+    <title>Nav-Assignment</title>
+   <style>
+    
+    .container1 {
+        display: flex;
+        justify-content: space-around;
+        background-color: gray;
+        height: auto;
+       
+    }
+    .container1>a{
+        text-decoration: none;
+    color: white;
+    font-size: 25px;
+ 
+    }
+    .container1>a:hover{
+        background-color: white;
+         color: black;
+    }
+    .container2{
+        display: flex;
+        justify-items: center;
+        
+        justify-content: center;
+        height: 180px;
+    }
+    .child{
+        text-align: center;
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 2px solid black;
+  margin: 5px;
+  padding-top:3% ;
+  height: 60%;
+ 
+        
+        
+    }
+    footer {
+width: 100%;
+background-color: gray;
+color: white;
+text-align: center;
+}
+@media (max-width: 500px) {
+  .child {
+    width: 90%;
+  }
+  .container2 {
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+  }
+  .container1 {
+    text-align: center;
+    flex-direction: column;
+  }
+}
+   </style>
+</head>
+<body>
+    <nav class="container1">
+        <a  href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+         <a href="#">Contact</a>
+    </nav>
+    <div class="container2">
+        <div class="child">
+            This is a flex item
+            <footer>footer</footer>
+            
+                
+        </div>
+        <div class="child">
+            
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit officia
+            voluptas cupiditate accusantium mollitia minima, deleniti cumque nam
+            pariatur fugiat optio. Quibusdam perferendis quo aliquid nam optio,
+            cumque sunt deserunt.
+                 <footer>footer</footer>
+        </div>
+       
+      
+      </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        div {
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+    "navv navv navv navv"
+    "Ras art art Las"
+    "foot foot foot foot";
+    color: white;
+}
+header {
+  background-color:rgb(8, 42, 72);
+  grid-area: navv;
+}
+aside.left {
+  background-color:orangered;
+
+  grid-area: Las;
+}
+aside.right {
+  background-color: orangered;
+  grid-area: Ras;
+}
+article {
+  background-color: green;
+  grid-area: art;
+  height: 40vh;
+}
+footer {
+  background-color: rgb(8, 42, 72);
+  grid-area: foot;
+}
+@media (max-width: 700px){
+  div{
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "navv"
+    "Ras"
+    "art"
+    "Las "
+    "foot ";
+
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <header><p>HEADER</p></header>
+      <aside class="right"><p>SIDEBAR</p></aside>
+      <article><p>MAIN CONTENT</p></article>
+      <aside class="left"><p>SIDEBAR</p></aside>
+      <footer><p>FOOTER</p></footer>
+    </div>
+  </body>
+</html>
